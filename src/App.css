@@ -1,38 +1,124 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+html,
+body {
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  width: 100%;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Helvetica Neue, Arial, Noto Sans, sans-serif, apple color emoji,
+    segoe ui emoji, Segoe UI Symbol, noto color emoji;
 }
 
-.App-link {
-  color: #61dafb;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/* BEGIN CONTAINER */
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.container-without-right-margin {
+  width: 100%;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.container-without-left-margin {
+  width: 100%;
+  padding-right: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
   }
-  to {
-    transform: rotate(360deg);
+
+  .container-without-right-margin {
+    width: auto;
+    margin-left: calc((100vw - 540px) / 2);
+  }
+
+  .container-without-left-margin {
+    width: auto;
+    margin-right: calc((100vw - 540px) / 2);
   }
 }
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+
+  .container-without-right-margin {
+    margin-left: calc((100vw - 720px) / 2);
+  }
+
+  .container-without-left-margin {
+    margin-right: calc((100vw - 720px) / 2);
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+
+  .container-without-right-margin {
+    margin-left: calc((100vw - 960px) / 2);
+  }
+
+  .container-without-left-margin {
+    margin-right: calc((100vw - 960px) / 2);
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+
+  .container-without-right-margin {
+    margin-left: calc((100vw - 1140px) / 2);
+  }
+
+  .container-without-left-margin {
+    margin-right: calc((100vw - 1140px) / 2);
+  }
+}
+
+.container-fluid {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* END CONTAINER */
+
+/* BEGIN SKELETON */
+.skeleton {
+  background: linear-gradient(90deg, #f2f2f2 25%, #e6e6e6 37%, #f2f2f2 63%);
+  background-size: 400% 100%;
+  -webkit-animation: skeleton-loading 1.4s ease infinite;
+  animation: skeleton-loading 1.4s ease infinite;
+}
+@keyframes skeleton-loading {
+  0% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0 50%;
+  }
+}
+
+/* END SKELETON */

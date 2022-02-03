@@ -1,0 +1,15 @@
+.onboard-card__check {
+  width: 20px;
+  height: 20px;
+  border: 1.5px solid #8c8c8c;
+  border-radius: 50%;
+  transition: 0.5s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.onboard-card__check--checked {
+  border: 1.5px solid #6fcf97;
+  background-color: #6fcf97;
+}

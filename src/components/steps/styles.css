@@ -1,0 +1,36 @@
+.steps__contianer {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.steps__contianer {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.onboard-card__wrapper-card + .onboard-card__wrapper-card {
+  margin-left: 0.5rem;
+}
+
+.onboard-card-loading__wrapper-card + .onboard-card-loading__wrapper-card {
+  margin-left: 0.5rem;
+}
+
+.onboard-onboard_container {
+  min-height: 328px;
+  display: flex;
+  margin: 1.25rem 0;
+  padding-right: 1rem;
+}
+
+@media (min-width: 578px) {
+  .steps__contianer {
+    padding-right: 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .steps__contianer {
+    justify-content: center;
+  }
+}

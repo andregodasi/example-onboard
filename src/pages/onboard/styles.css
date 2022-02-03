@@ -1,0 +1,50 @@
+.onboard__content {
+  max-width: 700px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.onboard__content > div {
+  display: flex;
+}
+
+.onboard__container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  position: relative;
+}
+
+.onboard__progress-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 1.25rem;
+}
+
+.onboard__subtitle {
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 2.625rem;
+  letter-spacing: 0em;
+  color: #f00000;
+  margin: 0;
+}
+
+.onboard__description {
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.5rem;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #1d1d1f;
+}
+
+.onboard__paragraph {
+  width: 100%;
+}

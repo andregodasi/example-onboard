@@ -1,0 +1,100 @@
+.onboard-card-loading__wrapper-card {
+  min-width: 168px;
+  width: 168px;
+  box-shadow: 0px 0px 8px rgba(154, 164, 173, 0.25);
+  padding: 1rem 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 0.25rem;
+}
+
+.onboard-card-loading__content {
+  display: flex;
+  flex-direction: column;
+}
+
+.onboard-card-check-container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.onboard-card-loading__image-container {
+  display: flex;
+  justify-content: center;
+}
+
+.onboard-card-loading__actions-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.btn-orange:hover {
+  color: #fff;
+  text-decoration: none;
+  background-color: #f00000;
+}
+
+.btn-orange {
+  border-radius: 8px;
+  background-color: #f00000;
+  color: white;
+}
+
+.onboard-card-loading__check {
+  height: 21.5px;
+  width: 21.5px;
+  border-radius: 50%;
+}
+
+.onboard-card-loading__image {
+  height: 80px;
+  width: 80px;
+}
+
+.onboard-card-loading__title {
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.25rem;
+  letter-spacing: 0em;
+  color: #5c5c5c;
+}
+
+.onboard-card-loading__description {
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.125rem;
+  letter-spacing: 0em;
+  color: #5c5c5c;
+}
+
+.onboard-card-loading__wrapper-card
+  .ant-skeleton-content
+  .ant-skeleton-paragraph
+  > li
+  + li {
+  margin-top: 8px;
+}
+
+.onboard-card-loading__wrapper-card
+  .ant-skeleton-content
+  .ant-skeleton-title
+  + .ant-skeleton-paragraph {
+  margin-top: 16px;
+}
+
+.onboard-card-loading__btn {
+  height: 38px;
+  border-radius: 8px;
+  width: 100%;
+  margin-bottom: 0.5rem;
+}
+
+.onboard-card-loading__see-training {
+  max-width: 100px;
+  width: 100%;
+  height: 18px;
+}
